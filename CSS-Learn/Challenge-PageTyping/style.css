@@ -1,0 +1,160 @@
+/* General setup */
+@import url("stylesheet.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+body {
+  font-family: "Alice", serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6,nav a {
+  font-family: "Abril Fatface", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 3.6rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h6 {
+  font-size: 1.7rem;
+}
+p,
+li {
+  font-size: 1.6rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+a {
+  color: #a66;
+  outline-color: transparent;
+}
+
+a:hover,
+a:focus {
+  /* color: #a66; */
+  text-decoration: none;
+
+  background-color: #f0f0f0;
+  /* font-weight: bold; */
+}
+
+a:active {
+  background-color: #a66;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+a[href^="http"] {
+  /* background-color: ; */
+  padding-right: 1.2em;
+  background: url("external-link-52.png") right / 1em 1em no-repeat;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 1.5em;
+}
+
+ul {
+  list-style-type: "➣";
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+
+
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  /* font-weight: bold; */
+  display: block;
+  background-color: #f0f0f0;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  /* padding: 1em; */
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #a66;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+nav a:active {
+  background-color: rgb(128, 77, 77);
+  /* color: #a66; */
+  font-weight: normal;
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Alice';
+    src: url('fonts/Alice-Regular.eot');
+    src: url('fonts/Alice-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Alice-Regular.woff2') format('woff2'),
+        url('fonts/Alice-Regular.woff') format('woff'),
+        url('fonts/Alice-Regular.ttf') format('truetype'),
+        url('fonts/Alice-Regular.svg#Alice-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('fonts/AbrilFatface-Regular.eot');
+    src: url('fonts/AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AbrilFatface-Regular.woff2') format('woff2'),
+        url('fonts/AbrilFatface-Regular.woff') format('woff'),
+        url('fonts/AbrilFatface-Regular.ttf') format('truetype'),
+        url('fonts/AbrilFatface-Regular.svg#AbrilFatface-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
