@@ -20,15 +20,15 @@
 
 
 html {
-  font-size: 10px;
-  margin: 0;
-  font-family: "Audiowide", sans-serif;
+    font-size: 10px;
+    margin: 0;
+    font-family: "Audiowide", sans-serif;
 }
 
 body {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Typography */
@@ -39,19 +39,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ultra", sans-serif;
+    font-family: "Ultra", sans-serif;
 }
 
 h1 {
-  font-size: 3.2rem;
+    font-size: 3.2rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+    font-size: 2.4rem;
 }
 
 p {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  word-spacing: 0.6rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    word-spacing: 0.6rem;
 }

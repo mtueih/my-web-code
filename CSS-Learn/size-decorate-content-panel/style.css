@@ -50,9 +50,7 @@ a:focus {
     margin: 0 auto;
     padding: 0 20px;
 
-    background: linear-gradient(
-        to bottom, #9fb4c7, #7f7caf
-    );
+    background: linear-gradient(to bottom, #9fb4c7, #7f7caf);
 }
 
 h1,
@@ -68,10 +66,8 @@ h1,
 .content {
     overflow: auto;
 
-    background: url("https://mdn.github.io/shared-assets/images/examples/big-star.png")
-        right 20px top 10px no-repeat,
-        #eeeeff
-    ;
+    background: url("https://mdn.github.io/shared-assets/images/examples/big-star.png") right 20px top 10px no-repeat,
+        #eeeeff;
 
     height: calc(100% - 200px);
 
