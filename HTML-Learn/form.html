@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 表单</title>
+  </head>
+  <body>
+    <h1>form 表单</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>input</legend>
+        <fieldset>
+          <legend>1</legend>
+          用户名：<input type="text" />
+        </fieldset>
+        下拉菜单：
+        <select>
+          <option value="">选择</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>HTML5 新增表单元素</legend>
+        <h2>HTML5 新增表单元素</h2>
+
+        <h3>颜色选择</h3>
+        <input type="color" name="" id="" />
+
+        <h3>日期选择</h3>
+        <input type="date" name="" id="" />
+
+        <h3>时间选择</h3>
+        <input type="time" name="" id="" />
+
+        <h3>电子邮件</h3>
+        <input type="email" name="" id="" />
+
+        <h3>必填项</h3>
+        <input type="text" required name="" id="" />
+
+        <h3>数字【最大值、最小值】</h3>
+        <input type="number" min="0" max="10" name="" id="" />
+
+		<h3>拖拽条（滑块）</h3>
+		<input type="range" min="0" max="100" name="" id="">
+
+		<h3>搜索框</h3>
+		<input type="search" name="" id="">
+
+		<h3>网址</h3>
+		<input type="url" name="" id="">
+
+		<h3>datalist</h3>
+		<input type="text" list="lang" name="" id="">
+		<datalist id="lang">
+			<option value="C">C</option>
+			<option value="C++">C++</option>
+
+		</datalist>
+
+      </fieldset>
+
+      <h2>提交按钮</h2>
+      <input type="submit" value="提交" />
+    </form>
+    <p></p>
+  </body>
+</html>
