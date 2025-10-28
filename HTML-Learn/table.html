@@ -1,209 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
-        <title>table 表格</title>
-    </head>
-    <body>
-        <h1>table 表格</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table 表格</title>
+  </head>
+  <body>
+    <h1>table 表格</h1>
 
-        <p>caption 标签：表格的标题</p>
-        <p>th 标签：表头</p>
-        <p>table 属性</p>
-        <ul>
-            <li><code>cellpadding</code>：单元格内边距</li>
-            <li><code>cellspacing</code>：单元格间距</li>
-        </ul>
+    <p>caption 标签：表格的标题</p>
+    <p>th 标签：表头</p>
+    <p>table 属性</p>
+    <ul>
+      <li><code>cellpadding</code>：单元格内边距</li>
+      <li><code>cellspacing</code>：单元格间距</li>
+    </ul>
 
-        <table
-            border="1"
-            cellpadding="25"
-            cellspacing="0"
-        >
-            <caption>
-                通讯录
-            </caption>
-            <tr>
-                <th>姓名</th>
-                <th>性别</th>
-                <th>年龄</th>
-                <th>城市</th>
-            </tr>
-            <tr>
-                <td>Ikun</td>
-                <td>男</td>
-                <td>25</td>
-                <td>上海</td>
-            </tr>
-        </table>
+    <table border="1" cellpadding="25" cellspacing="0">
+      <caption>
+        通讯录
+      </caption>
+      <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>城市</th>
+      </tr>
+      <tr>
+        <td>Ikun</td>
+        <td>男</td>
+        <td>25</td>
+        <td>上海</td>
+      </tr>
+    </table>
 
-        <h2>表格 - 跨行跨列</h2>
+    <h2>表格 - 跨行跨列</h2>
 
-        <h3>案例 1</h3>
+    <h3>案例 1</h3>
 
-        <table
-            border="1"
-            cellspacing="0"
-            cellpadding="10"
-        >
-            <caption>
-                学生个人信息登记表
-            </caption>
+    <table border="1" cellspacing="0" cellpadding="10">
+      <caption>
+        学生个人信息登记表
+      </caption>
 
-            <tr>
-                <th colspan="8">X高中XX班学生信息登记表</th>
-            </tr>
-            <tr>
-                <th colspan="8">学生基础信息</th>
-            </tr>
-            <tr>
-                <td>姓名</td>
-                <td>XXX</td>
-                <td>国籍/地区</td>
-                <td>中国</td>
-                <td>姓名拼音</td>
-                <td>XXX</td>
-                <td>班内学号</td>
-                <td>20211101</td>
-            </tr>
-            <tr>
-                <td>性别</td>
-                <td>女</td>
-                <td>身份证件类型</td>
-                <td>本地居民</td>
-                <td>曾用名</td>
-                <td>无</td>
-                <td>班级</td>
-                <td>高三（1）班</td>
-            </tr>
-            <tr>
-                <td>出生日期</td>
-                <td>2008年10月1日</td>
-                <td>民族</td>
-                <td>汉</td>
-                <td>户口所在地</td>
-                <td>广东</td>
-                <td>入学年月</td>
-                <td>2018年9月</td>
-            </tr>
-            <tr>
-                <td>出生地</td>
-                <td>广东</td>
-                <td>政治面貌</td>
-                <td>群众</td>
-                <td>户口性质</td>
-                <td>城镇户口</td>
-                <td>入学方式</td>
-                <td>普通入学</td>
-            </tr>
-            <tr>
-                <td>籍贯</td>
-                <td>海淀区</td>
-                <td>健康状况</td>
-                <td>良好</td>
-                <td>特长</td>
-                <td>书法</td>
-                <td>就读方式</td>
-                <td>走读</td>
-            </tr>
-            <tr>
-                <td>身份证号</td>
-                <td colspan="3">1234*******1234</td>
-                <td>身份证件有效期</td>
-                <td colspan="3">2030 年</td>
-            </tr>
-            <tr>
-                <th colspan="8">学生个人联系信息</th>
-            </tr>
-            <tr>
-                <td>现住址</td>
-                <td colspan="7"></td>
-            </tr>
-            <tr>
-                <td>家庭地址</td>
-                <td colspan="7"></td>
-            </tr>
-            <tr>
-                <td>联系电话</td>
-                <td colspan="7"></td>
-            </tr>
-            <tr>
-                <td>电子邮箱</td>
-                <td colspan="7"></td>
-            </tr>
-        </table>
+      <tr>
+        <th colspan="8">X高中XX班学生信息登记表</th>
+      </tr>
+      <tr>
+        <th colspan="8">学生基础信息</th>
+      </tr>
+      <tr>
+        <td>姓名</td>
+        <td>XXX</td>
+        <td>国籍/地区</td>
+        <td>中国</td>
+        <td>姓名拼音</td>
+        <td>XXX</td>
+        <td>班内学号</td>
+        <td>20211101</td>
+      </tr>
+      <tr>
+        <td>性别</td>
+        <td>女</td>
+        <td>身份证件类型</td>
+        <td>本地居民</td>
+        <td>曾用名</td>
+        <td>无</td>
+        <td>班级</td>
+        <td>高三（1）班</td>
+      </tr>
+      <tr>
+        <td>出生日期</td>
+        <td>2008年10月1日</td>
+        <td>民族</td>
+        <td>汉</td>
+        <td>户口所在地</td>
+        <td>广东</td>
+        <td>入学年月</td>
+        <td>2018年9月</td>
+      </tr>
+      <tr>
+        <td>出生地</td>
+        <td>广东</td>
+        <td>政治面貌</td>
+        <td>群众</td>
+        <td>户口性质</td>
+        <td>城镇户口</td>
+        <td>入学方式</td>
+        <td>普通入学</td>
+      </tr>
+      <tr>
+        <td>籍贯</td>
+        <td>海淀区</td>
+        <td>健康状况</td>
+        <td>良好</td>
+        <td>特长</td>
+        <td>书法</td>
+        <td>就读方式</td>
+        <td>走读</td>
+      </tr>
+      <tr>
+        <td>身份证号</td>
+        <td colspan="3">1234*******1234</td>
+        <td>身份证件有效期</td>
+        <td colspan="3">2030 年</td>
+      </tr>
+      <tr>
+        <th colspan="8">学生个人联系信息</th>
+      </tr>
+      <tr>
+        <td>现住址</td>
+        <td colspan="7"></td>
+      </tr>
+      <tr>
+        <td>家庭地址</td>
+        <td colspan="7"></td>
+      </tr>
+      <tr>
+        <td>联系电话</td>
+        <td colspan="7"></td>
+      </tr>
+      <tr>
+        <td>电子邮箱</td>
+        <td colspan="7"></td>
+      </tr>
+    </table>
 
-        <h3>案例 2</h3>
+    <h3>案例 2</h3>
 
-        <table
-            border="1"
-            cellspacing="0"
-            cellpadding="5"
-        >
-            <caption>
-                版本规划任务分配表
-            </caption>
-            <tr>
-                <th colspan="2">需求：V0.3版本规划</th>
-                <th>优先级</th>
-                <th>任务分解</th>
-                <th>产品负责人</th>
-            </tr>
-            <tr>
-                <td rowspan="3">功能模块1</td>
-                <td>具体事项1</td>
-                <td>3</td>
-                <td>任务1</td>
-                <td rowspan="3">@翠花</td>
-            </tr>
-            <tr>
-                <td rowspan="2">具体事项2</td>
-                <td>4</td>
-                <td>任务2</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>任务3</td>
-            </tr>
-            <tr>
-                <td rowspan="6">功能模块2</td>
-                <td>具体事项1</td>
-                <td>2</td>
-                <td>任务1</td>
-                <td rowspan="6"></td>
-            </tr>
-            <tr>
-                <td rowspan="4">具体事项2</td>
-                <td>3</td>
-                <td>任务1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>任务2</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>任务3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>任务4</td>
-            </tr>
-            <tr>
-                <td>具体事项3</td>
-                <td>1</td>
-                <td>任务1</td>
-            </tr>
-            <tr>
-                <th colspan="5">备注信息</th>
-            </tr>
-            <tr>
-                <td colspan="5">...</td>
-            </tr>
-        </table>
-    </body>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <caption>
+        版本规划任务分配表
+      </caption>
+      <tr>
+        <th colspan="2">需求：V0.3版本规划</th>
+        <th>优先级</th>
+        <th>任务分解</th>
+        <th>产品负责人</th>
+      </tr>
+      <tr>
+        <td rowspan="3">功能模块1</td>
+        <td>具体事项1</td>
+        <td>3</td>
+        <td>任务1</td>
+        <td rowspan="3">@翠花</td>
+      </tr>
+      <tr>
+        <td rowspan="2">具体事项2</td>
+        <td>4</td>
+        <td>任务2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>任务3</td>
+      </tr>
+      <tr>
+        <td rowspan="6">功能模块2</td>
+        <td>具体事项1</td>
+        <td>2</td>
+        <td>任务1</td>
+        <td rowspan="6"></td>
+      </tr>
+      <tr>
+        <td rowspan="4">具体事项2</td>
+        <td>3</td>
+        <td>任务1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>任务2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>任务3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>任务4</td>
+      </tr>
+      <tr>
+        <td>具体事项3</td>
+        <td>1</td>
+        <td>任务1</td>
+      </tr>
+      <tr>
+        <th colspan="5">备注信息</th>
+      </tr>
+      <tr>
+        <td colspan="5">...</td>
+      </tr>
+    </table>
+  </body>
 </html>

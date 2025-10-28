@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -6,76 +6,81 @@
     <title>使用的标签</title>
   </head>
   <body>
-	<h1>使用的标签</h1>
+    <h1>使用的标签</h1>
 
-	<h2>details 和 summary</h2>
+    <h2>details 和 summary</h2>
 
-	<details>
-		<summary>点击查看源代码</summary>
-		<p>这里是源代码</p>
-	</details>
+    <details>
+      <summary>点击查看源代码</summary>
+      <p>这里是源代码</p>
+    </details>
 
-	<details>
-		<summary>点击查看相关课程视频</summary>
-		<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115230533224107&bvid=BV1NuW3zJELm&cid=32478659330&p=11" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-	</details>
+    <details>
+      <summary>点击查看相关课程视频</summary>
+      <iframe
+        src="//player.bilibili.com/player.html?isOutside=true&aid=115230533224107&bvid=BV1NuW3zJELm&cid=32478659330&p=11"
+        scrolling="no"
+        border="0"
+        frameborder="no"
+        framespacing="0"
+        allowfullscreen="true"
+      ></iframe>
+    </details>
 
+    <h2>progress 和 meter</h2>
 
-	<h2>progress 和 meter</h2>
+    <p>
+      下载进度：
+      <progress value="75" max="100"></progress>
+    </p>
 
-	<p>下载进度：
-		<progress value="75" max="100"></progress>
-	</p>
+    <p>
+      <label> 磁盘使用量：<meter value="0.5"></meter> </label>
+    </p>
 
-	<p>
-		<label>
-			磁盘使用量：<meter value="0.5"></meter>
-		</label>
-	</p>
+    <h2>output</h2>
 
+    <p>显示用户操作或计算的结果，常与 form 配合使用</p>
 
-	<h2>output</h2>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" name="a" />+ <input type="number" name="b" /> =
+      <output name="result">0</output>
+    </form>
 
-	<p>显示用户操作或计算的结果，常与 form 配合使用</p>
+    <h2>ruby、rp 和 rt</h2>
 
-	<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-		<input type="number" name="a" >+
-		<input type="number" name="b"> =
-		<output name="result">0</output>
-	</form>
+    <p>为东亚文字提供注音，起到发音辅助的作用。</p>
 
+    <ruby>道<rp>(</rp><rt>dao</rt><rp>)</rp>，可道也，非恒道也。</ruby>
 
-	<h2>ruby、rp 和 rt</h2>
+    <h3>可选标签：rb</h3>
+    <p>用于明确包裹基础文字，提升代码的可读性</p>
 
-	<p>为东亚文字提供注音，起到发音辅助的作用。</p>
+    <p>
+      众里寻他千百度，<ruby>
+        <rb>蓦</rb>
+        <rp>(</rp>
+        <rt>mo</rt>
+        <rp>)</rp> </ruby
+      >然回首，那人却在灯火阑珊处。
+    </p>
 
-
-	<ruby>道<rp>(<rt>dao</rt>)</rp>，可道也，非恒道也。</ruby>
-
-	<h3>可选标签：rb</h3>
-	<p>用于明确包裹基础文字，提升代码的可读性</p>
-
-	<p>众里寻他千百度，<ruby>
-			<rb>蓦</rb>
-				<rp>(</rp>
-					<rt>mo</rt>
-				<rp>)</rp>
-		</ruby>然回首，那人却在灯火阑珊处。
-	</p>
-
-	<p>
-  这是一个
-  <ruby> 
-    示 <!-- 汉字 -->
-    <rp>(</rp><rt>shì</rt><rp>)</rp> <!-- 拼音 -->
-  </ruby>
-  例句子，展示
-  <ruby>
-    如 <!-- 汉字 -->
-    <rp>(</rp><rt>rú</rt><rp>)</rp> <!-- 拼音 -->
-  </ruby>
-  何正确注音。
-</p>
-
+    <p>
+      这是一个
+      <ruby>
+        示
+        <!-- 汉字 -->
+        <rp>(</rp><rt>shì</rt><rp>)</rp>
+        <!-- 拼音 -->
+      </ruby>
+      例句子，展示
+      <ruby>
+        如
+        <!-- 汉字 -->
+        <rp>(</rp><rt>rú</rt><rp>)</rp>
+        <!-- 拼音 -->
+      </ruby>
+      何正确注音。
+    </p>
   </body>
 </html>

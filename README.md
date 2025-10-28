@@ -1,6 +1,5 @@
 # My-Web-Code
 
-Simple code written while learning. 
+Simple code written while learning.
 
 ## HTML
-
