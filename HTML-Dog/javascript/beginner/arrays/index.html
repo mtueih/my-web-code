@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var emptyArray = [];
+
+        var shoppingList = ['唱', '跳', 'Rap', '篮球'];
+        // 访问数组元素
+        shoppingList[0];
+        // 修改数组元素
+        shoppingList[2] = 'RAP';
+        // 获取数组长度
+        alert(shoppingList.length);
+        // push 和 pop，在数组末端添加元素，删除末端元素
+        shoppingList.push('Music');
+        shoppingList.pop();
+
+        // 案例
+        var helloFrom = function (personName) {
+            return "Hello from " + personName;
+        };
+
+        var people = ['蔡坤', '艾坤', '徐坤'];
+
+        people.push('虚空');
+        people.push('奶龙');
+
+        people.pop();
+
+        for (var i = 0; i < people.length; i++) {
+            var greeting = helloFrom(people[i]);
+            alert(greeting);
+        }
+    </script>
+</body>
+</html>

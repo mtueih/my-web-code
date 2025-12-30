@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // 对象 —— 一组属性和方法
+        // 创建对象
+        var jedi = {
+            name: "蔡鲲本鲲",
+            age: 250,
+            talk: function () {
+                alert("全民制作人们大家好……");
+            }
+        };
+        // 访问对象数据
+        alert(jedi.name);
+        alert(jedi.age);
+        jedi.talk();
+        // 重新赋值
+        jedi.age = 2500;
+        // 随时添加新属性
+        jedi.lightsaber = "purple";
+        // 嵌套对象
+        var person = {
+            age: 122
+        };
+        person.name = {
+            first: "Jeanne",
+            last: "Calment"
+        };
+        // 创建空对象然后添加属性和方法也可以
+        var dog = {};
+        dog.bark = function () { alert("Woof!"); };
+    </script>
+</body>
+</html>
