@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <script>
+        // AJAX —— 异步 JavaScript 和 AML
+        // XHR（XML HTTP Request）
+        // 创建 XHR 请求
+        var req = new XMLHttpRequest();
+        // 指定一个回调函数，在数据加载时调用
+        req.onload = function (event) {
+
+        };
+        // 指定如何获得想要的数据
+        // 第一个参数是 HTTP 方法（GET、POST、PUT 等）
+        // 第二个参数是要获取的 URL
+        // 第三个参数指定请求是否「异步」
+        // 「异步」：代码继续执行，知道请求相应触发回调
+        // 「同步」：代码会在该行暂停直到请求响应
+        req.open('get', 'some-file.txt', true);
+        // 触发请求
+        req.send();
+    </script>
+</body>
+</html>

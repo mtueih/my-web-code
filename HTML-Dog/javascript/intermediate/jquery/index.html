@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <button class="btn">我是一个按钮 1</button>
+    <button class="btn">我是一个按钮 2</button>
+    <button class="btn">我是一个按钮 3</button>
+
+    <!-- 引入 jQuery 脚本文件（通过 CDN） -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        // jQuery
+        $('.btn').click(function () {
+            console.log("别点击我！");
+        });
+    </script>
+</body>
+</html>

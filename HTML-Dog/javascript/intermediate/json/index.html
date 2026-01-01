@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        // JSON —— JavaScript Object Notation（JavaScript 对象符号）
+        var vailable = { "name": "Yoda", age: 894, "lightsaber" : { "color": "green" } };
+        // JSON 对象 —— stringify 方法，将 json 数据转化为字符串形式
+        var jsonString = JSON.stringify({
+            make: "McLaren",
+            model: "MP4-12C",
+            miles: 5023
+        });
+        alert(jsonString);
+        // 将 json 字符串转化为数据对象
+        var car = JSON.parse(jsonString);
+        alert(car.make);
+        alert(car.model);
+        alert(car.miles);
+    </script>
+</body>
+</html>

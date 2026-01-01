@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // JavaScript 中，声明在函数中的变量的作用域仅限于该函数
+        // 而声明在函数外的变量是「全局可用的」
+        var doSomething = function () {
+            var a = 10;
+        };
+
+        doSomething();
+
+        console.log(a);
+
+        // 下面的例子，变量 b 是全局可用的
+        var a = 10;
+
+        if (a > 5) {
+            var b = 5;
+        }
+
+        var c = a + b;
+
+        // 子作用域
+        var doSomething = function () {
+            var x = 10;
+            var doSomethingElse = function () {
+                // x 可见
+                console.log(x);
+            };
+            doSomethingElse();
+        };
+
+        doSomething();
+    </script>
+</body>
+</html>

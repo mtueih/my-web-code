@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM</title>
+</head>
+<body>
+    <header id="page-header">
+
+    </header>
+
+    <script>
+        // document 对象，用于在 JS 中访问 DOM 对象
+        // 获得元素
+        // 通过 ID
+        var pageHeader = document.getElementById('page-header');
+        // 通过标签名称（返回一个数组）
+        var pArray = document.getElementsByTagName('p');
+        // 通过 class 名称
+        var logoArray = document.getElementsByClassName('logo');
+        // 通过 CSS 选择器
+        // querySelector 只返回匹配的第一个元素
+        // querySelector 返回匹配到的所有元素
+        var pageHeader = document.querySelector('#header');
+        var buttons = document.querySelectorAll('.btn');
+    </script>
+</body>
+</html>

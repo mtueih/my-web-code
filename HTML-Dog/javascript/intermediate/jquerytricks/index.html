@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery: Other Tricks</title>
+</head>
+<body>
+    <!-- 引入 jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        // 等 DOM 加载完成时再执行某个函数
+        var doSomething = function () { 
+            console.log('Hello, world!');
+        };
+        // 纯 JS 实现
+        window.addEventListener('DOMContentLoaded', doSomething);
+        // jQuery 实现
+        $(window).ready(doSomething);
+        // 以上代码可以进一步简化为
+        $(doSomething);
+
+        // 等页面全部加载完毕（所有样式表和图片都下载完毕）再执行某个函数
+        // 纯 JS 实现
+        window.addEventListener('load', doSomething);
+        // jQuery 实现
+        $(window).load(doSomething);
+
+        // 类型检查
+        // 数组
+        $.isArray([1, 2, 3]);
+        // 函数
+        $.isFunction(function () { });
+        // 数值
+        $.isNumeric(10);
+        // 对象
+        $.isPlainObject({ name: 'Tom' });
+    </script>
+</body>
+</html>
