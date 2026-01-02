@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Elements</title>
+</head>
+<body>
+    <!-- 引入 jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        // 在 JS 中创建 DOM 元素
+        var div = document.createElement('div');
+        div.textContent = "Sup, y'all?";
+        div.setAttribute('class', 'note');
+        document.body.appendChild(div);
+        // 所有元素都有 appendChild 方法
+        var span = document.createElement('span');
+        span.textContent = "Hello!";
+        div.appendChild(span);
+        // IE 只支持 innerText
+        var span = document.createElement('span');
+        if (span.textContent) {
+            span.textContent = "Hello!";
+        } else if (span.innerText) {
+            span.innerText = "Hello!";
+        }
+
+        // 移除元素，调用父元素的 removeChild 方法
+        div.parentNode.removeChild(div);
+
+        // 使用 jQuery
+        var div = $('<div/>').text("Sup, y'all?").appendTo(document.body);
+        $('<span/>').text('Hello!').appendTo(div);
+    </script>
+</body>
+</html>

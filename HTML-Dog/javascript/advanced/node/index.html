@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js</title>
+</head>
+<body>
+    <script>
+        var http = require('http');
+
+        var server = http.createServer(function (req, res) {
+            res.writeHead(200, {'Content-Type': 'text/plain'});
+            res.end('Hello World\n');
+        });
+
+        server.listen(1377, '127.0.0.1');
+
+        console.log('Server running at http://127.0.0.1:1337/');
+    </script>
+</body>
+</html>

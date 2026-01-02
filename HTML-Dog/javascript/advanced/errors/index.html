@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errors and Exceptions</title>
+</head>
+<body>
+    <script>
+        // JSON.parse("a");
+
+        // try-catch 机制
+        try {
+            JSON.parse("a");
+        } catch (error) {
+            alert(error.message);
+        }
+
+        // 抛出错误
+        throw new Error("I hungry. Fridge empty.");
+    </script>
+</body>
+</html>

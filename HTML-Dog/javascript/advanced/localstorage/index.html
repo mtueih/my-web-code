@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        // 保存数据
+        localStorage.setItem('name', 'Tom');
+        // 获取保存的数据
+        var name = localStorage.getItem('name');
+        // 本地存储，只能存储字符串，因此需要使用 JSON.stringify 转换为字符串形式
+        localStorage.setItem('user', JSON.stringify({
+            username: 'htmldog',
+            api_key: 'adc123xyz789'
+        }));
+
+        var user = JSON.parse(localStorage.getItem('user'));
+    </script>
+</body>
+</html>

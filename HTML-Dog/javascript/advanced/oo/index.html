@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Oriented Code</title>
+</head>
+<body>
+    <script>
+        // JavaScript 对象 —— 命名属性和方法的集合
+        var user = {
+            name: "tom",
+            say: function (words) { alert(words); }
+        };
+        // 构造函数
+        var Person = function (name) {
+            this.name = name;
+        };
+        // 使用构造函数创建对象
+        var tom = new Person('Tom');
+        
+        // 在构造函数的原型属性中添加属性和方法
+        Person.prototype.say = function (words) {
+            alert(this.name + ' says"' + words + '"');
+        };
+        var ikun = new Person("Ikun");
+        ikun.say("你好");
+    </script>
+</body>
+</html>

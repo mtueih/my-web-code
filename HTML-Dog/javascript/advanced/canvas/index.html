@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <canvas></canvas>
+    <script>
+        // var canvas = document.querySelector('canvas');
+        // var ctx = canvas.getContext('2d');
+
+        // // ctx.fillRect(10, 10, 10, 10);
+
+        // var resize = function () {
+        //     canvas.width = window.innerWidth;
+        //     canvas.height = window.innerHeight;
+        // };
+
+        // window.addEventListener('resize', resize);
+
+        // window.addEventListener('load', function () {
+
+        //     resize();
+
+        //     var pos, vel;
+
+        //     pos = {
+        //         x: 10,
+        //         y: 10
+        //     };
+        //     vel = {
+        //         x: 1,
+        //         y: 1
+        //     };
+
+        //     var loop = function () {
+        //         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        //         pos.x += vel.x;
+        //         pos.y += vel.y;
+
+        //         if (pox.x < 5 || pox.x > canvas.width - 5) {
+        //             vel.x *= -1;
+        //         }
+
+        //         if (pox.y < 5 || pox.y > canvas.height - 5) {
+        //             vel.y *= -1;
+        //         }
+
+        //         ctx.fillRect(pos.x - 5, pos.y - 5, 10, 10);
+
+        //     };
+
+        //     setInterval(loop, 1000 / 60);
+        // });
+
+
+        var canvas = document.querySelector('canvas'),
+            ctx = canvas.getContext('2d');
+
+        var resize = function () {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        };
+
+        window.addEventListener('resize', resize);
+
+        window.addEventListener('load', function () {
+
+            resize();
+
+            var pos, vel;
+            pos = {
+                x: 10,
+                y: 10
+            };
+            vel = {
+                x: 1,
+                y: 1
+            };
+
+            var loop = function () {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                pos.x += vel.x;
+                pos.y += vel.y;
+                if (pos.x < 5 || pos.x > canvas.width - 5) {
+                    vel.x *= -1;
+                }
+                if (pos.y < 5 || pos.y > canvas.height - 5) {
+                    vel.y *= -1;
+                }
+                ctx.fillRect(pos.x - 5, pos.y - 5, 10, 10);
+            };
+
+            setInterval(loop, 1000 / 60);
+        });
+
+    </script>
+</body>
+
+</html>

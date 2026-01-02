@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expressions</title>
+</head>
+<body>
+    <script>
+        // 创建正则表达式
+        var regex = /^[a-z\s]+$/;
+
+        // 匹配
+        var lowerCaseString = 'some characters';
+
+        if (lowerCaseString.match(regex)) {
+            alert('Yes, all lowercase');
+        }
+
+        // 替换
+        var text = "There is everything and nothing.";
+        
+        text = text.replace(/(every|no)thing/g, 'something');
+
+        var text = "Everything and nothing.";
+
+        text = text.replace(/(every|no)thing/gi, "something");
+    </script>
+</body>
+</html>

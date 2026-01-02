@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body>
+    <script>
+        var saver = function (value) {
+            return function () {
+                return value;
+            };    
+        };
+        
+        var retriever = saver(10);
+
+        alert(retriever());
+
+        var add = function (a) {
+            return function (b) {
+                return a + b;
+            }
+        };
+
+        var addFive = add(5);
+
+        alert(addFive(10));
+
+        var hello = add('Hello ');
+
+        alert(hello('Ikun'));
+    </script>
+</body>
+</html>
